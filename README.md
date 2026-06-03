@@ -105,8 +105,8 @@ This project was built with genuine passion and tested extensively in real-world
 1. Download the latest release (Windows build)
 2. Place the application in a folder of your choice
 3. Run `Genesis.exe`
-4. Import or create configurations via the **Config Creator**
-5. Add your OpenRouter API key in the settings (stored encrypted locally)
+4. Add your OpenRouter API key in the settings (stored encrypted locally)
+5. Create configurations via the **Config Creator** or play Pre-Cached configurations
 
 ---
 
