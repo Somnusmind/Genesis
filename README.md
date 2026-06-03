@@ -2,7 +2,7 @@
 
 **Version 0.1.0** • Windows only
 
-A powerful Unity-based application for creating **high-quality, personalized hypnosis, meditation, mantra, and subliminal audio sessions** in just a few minutes.
+A powerful Unity-based application for creating **high-quality, personalized hypnosis, meditation, mantra, and subliminal audio sessions** in just a few seconds.
 
 Genesis uses a YAML configuration system combined with OpenRouter TTS, a professional-grade audio pipeline, and advanced brainwave entrainment to deliver consistent, studio-quality results.
 
