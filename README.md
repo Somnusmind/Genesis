@@ -70,6 +70,24 @@ Genesis uses a YAML configuration system combined with OpenRouter TTS, a profess
 
 ---
 
+## Data Location
+
+All user-generated data is stored in the following location on Windows:
+
+**`%localappdata%low\Somnusmind\Genesis`**
+
+(or manually: `C:\Users\YourName\AppData\LocalLow\Somnusmind\Genesis`)
+
+This folder contains:
+- Your encrypted OpenRouter API key
+- All YAML configuration files + media folders
+- TTS audio cache
+- The editable `SystemPrompt.md`
+
+You can freely inspect, edit, or back up these files.
+
+---
+
 ## Important Notes
 
 ### Repository Contents
@@ -106,6 +124,6 @@ This project is released under the **MIT License** (see `LICENSE` file).
 
 ## Credits
 
-Created with care by Somnusmind.
+Created with passion by Somnusmind.
 
 If you find this tool useful, consider starring the repository — it helps others discover it.
