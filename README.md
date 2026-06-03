@@ -54,7 +54,7 @@ Genesis uses a YAML configuration system combined with OpenRouter TTS, a profess
 
 ---
 
-## Iamges
+## Images
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/7e01108c-d67b-493e-9520-eb6633f30299" />
 
