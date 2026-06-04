@@ -2,7 +2,7 @@
 
 **Version 0.1.0** • Windows only
 
-A powerful Unity-based application for creating **high-quality, personalized hypnosis, meditation, mantra, and subliminal audio sessions** in just a few seconds.
+A powerful Unity-based application for creating **high-quality, personalized hypnosis, meditation, mantra, and subliminal audio sessions**.
 
 Genesis uses a YAML configuration system combined with OpenRouter TTS, a professional-grade audio pipeline, and advanced brainwave entrainment to deliver consistent, studio-quality results.
 
@@ -68,7 +68,6 @@ Genesis uses a YAML configuration system combined with OpenRouter TTS, a profess
 
 <img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/6df8bd86-c1fd-4456-b4c6-50afa00e4f4d" />
 
-
 ---
 
 ## Data Location
@@ -98,6 +97,10 @@ The full Unity project cannot be shared because it uses multiple paid Unity asse
 ### Philosophy
 This project was built with genuine passion and tested extensively in real-world scenarios over many months. Every component (mixer routing, reverb presets, normalization, spatial movement, etc.) was refined through actual use rather than theoretical design.
 
+### Pre-Cached Configurations
+Only the **Tutorial** configuration is shipped pre-cached.  
+All other configurations require an OpenRouter API key and will synthesize the audio on first use.
+
 ---
 
 ## Getting Started
@@ -106,7 +109,7 @@ This project was built with genuine passion and tested extensively in real-world
 2. Place the application in a folder of your choice
 3. Run `Genesis.exe`
 4. Add your OpenRouter API key in the settings (stored encrypted locally)
-5. Create configurations via the **Config Creator** or play Pre-Cached configurations
+5. Play the pre-cached **Tutorial** configuration, or create new ones using the **Config Creator**
 
 ---
 
