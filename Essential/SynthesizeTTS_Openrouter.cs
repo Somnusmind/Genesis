@@ -33,10 +33,10 @@ public class SynthesizeTTS_OpenRouter : MonoBehaviour
 
     // TTS Configuration
     [SerializeField]
-    private string model = "openai/gpt-4o-mini-tts-2025-12-15";
+    private string model = "x-ai/grok-voice-tts-1.0";
 
     [SerializeField]
-    private string voice = "alloy";
+    private string voice = "eve";
 
     // NOTE: speed and responseFormat have been removed from user configuration.
     // The API always receives response_format: "mp3" and no speed parameter
