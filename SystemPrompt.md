@@ -63,10 +63,12 @@ Audio cues must be contextually introduced by a preceding sentence. Exception: f
 | stage5TTS | **Hypnosis (Awake):** Emergence, 1–5 count, finger snap, "wide awake". · **Meditation:** Integration, unhurried return. |
 
 ### TTS Configuration (OpenRouter)
-| Field | Options |
-|-------|---------|
-| `ttsModel` | Full model path from OpenRouter. `openai/gpt-4o-mini-tts-2025-12-15` (recommended) · `openai/tts-1` · `openai/tts-1-hd` |
-| `ttsVoice` | Voice identifier. Format depends on provider. OpenAI: `alloy` · `ash` · `ballad` · `coral` · `echo` · `fable` · `nova` · `onyx` · `sage` · `shimmer` |
+| Field | Notes |
+|-------|-------|
+| `ttsModel` | Full model path from OpenRouter. **Standard:** `x-ai/grok-voice-tts-1.0` (Grok Voice TTS). Use the standard unless the user explicitly specifies a different model in the prompt. |
+| `ttsVoice` | Voice identifier. **Standards by session type:** · Hypnosis / Meditation / Subliminal / BET / Experimental → `eve` · Mantra → `leo` **Available voices for Grok Voice TTS:** `eve` · `ara` · `rex` · `sal` · `leo`. Use the session-type standard unless the user explicitly specifies a different voice from this list. |
+
+The standard model and voice shown in the examples below are not a selection to be made. For BET-only sessions (no spoken content), set both fields to empty strings.
 
 ### Prohibited Language (Steam Compliance)
 The following words and framing devices must never appear in generated text because they imply medical intervention, mechanical reprogramming, or behavioral coercion.
@@ -364,12 +366,11 @@ mantraTTS: |
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
-ttsModel: openai/gpt-4o-mini-tts-2025-12-15
+# Voice names are tied to models and are not portable across providers.
+ttsModel: x-ai/grok-voice-tts-1.0
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
-ttsVoice: onyx
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
+ttsVoice: eve
 
 # ----------------------------------------------------------------------------
 # LOOP SETTINGS
@@ -699,12 +700,11 @@ mantraTTS: |
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
-ttsModel: openai/gpt-4o-mini-tts-2025-12-15
+# Voice names are tied to models and are not portable across providers.
+ttsModel: x-ai/grok-voice-tts-1.0
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
-ttsVoice: onyx
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
+ttsVoice: eve
 
 # ----------------------------------------------------------------------------
 # LOOP SETTINGS
@@ -943,12 +943,11 @@ mantraTTS: ''
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
-ttsModel: openai/gpt-4o-mini-tts-2025-12-15
+# Voice names are tied to models and are not portable across providers.
+ttsModel: x-ai/grok-voice-tts-1.0
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
-ttsVoice: onyx
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
+ttsVoice: eve
 
 # ----------------------------------------------------------------------------
 # LOOP SETTINGS
@@ -1140,12 +1139,11 @@ mantraTTS: ''
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
-ttsModel: openai/gpt-4o-mini-tts-2025-12-15
+# Voice names are tied to models and are not portable across providers.
+ttsModel: x-ai/grok-voice-tts-1.0
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
-ttsVoice: onyx
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
+ttsVoice: eve
 
 # ----------------------------------------------------------------------------
 # LOOP SETTINGS
@@ -1302,12 +1300,11 @@ mantraTTS: |
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
-ttsModel: openai/gpt-4o-mini-tts-2025-12-15
+# Voice names are tied to models and are not portable across providers.
+ttsModel: x-ai/grok-voice-tts-1.0
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
-ttsVoice: nova
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
+ttsVoice: eve
 
 # ----------------------------------------------------------------------------
 # LOOP SETTINGS
@@ -1464,12 +1461,11 @@ mantraTTS: |
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
-ttsModel: openai/gpt-4o-mini-tts-2025-12-15
+# Voice names are tied to models and are not portable across providers.
+ttsModel: x-ai/grok-voice-tts-1.0
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
-ttsVoice: nova
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
+ttsVoice: leo
 
 # ----------------------------------------------------------------------------
 # LOOP SETTINGS
@@ -1611,11 +1607,10 @@ mantraTTS: ''
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
+# Voice names are tied to models and are not portable across providers.
 ttsModel: ''
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
 ttsVoice: ''
 
 # ----------------------------------------------------------------------------
@@ -1762,11 +1757,10 @@ mantraTTS: ''
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
+# Voice names are tied to models and are not portable across providers.
 ttsModel: ''
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
 ttsVoice: ''
 
 # ----------------------------------------------------------------------------
@@ -1964,12 +1958,11 @@ mantraTTS: |
 # ----------------------------------------------------------------------------
 # TTS CONFIGURATION (OpenRouter)
 # ----------------------------------------------------------------------------
-# Full model path from OpenRouter
-ttsModel: openai/gpt-4o-mini-tts-2025-12-15
+# Voice names are tied to models and are not portable across providers.
+ttsModel: x-ai/grok-voice-tts-1.0
 
-# Voice identifier (format depends on the API provider)
-# OpenAI: alloy, echo, fable, onyx, nova, shimmer etc.
-ttsVoice: onyx
+# Example voices (Grok Voice TTS): eve, ara, rex, sal, leo
+ttsVoice: eve
 
 # ----------------------------------------------------------------------------
 # LOOP SETTINGS
